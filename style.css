@@ -1,0 +1,233 @@
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #4a454b;
+  height: 100vh;
+}
+
+.header .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 140;
+}
+
+.header .top-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .top-header nav li {
+  list-style: none;
+  margin-right: 36px;
+}
+
+.header .top-header nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.event-details {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.event-details h2 {
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 63px;
+}
+
+.event-details p {
+  width: 50%;
+  margin-top: 23px;
+}
+
+.event-details .advantages-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.event-details .advantages-event h3 {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.event-details .table-time-events {
+  width: 100%;
+  color: #fefefe;
+}
+
+.event-details .table-time-events .title-tr {
+  background: #a3cc40;
+  height: 75px;
+}
+
+.event-details .table-time-events tr:nth-child(odd) {
+  background: #4b4d4f;
+}
+
+.event-details .table-time-events tr:nth-child(even) {
+  background: #373737;
+}
+
+.event-details:before {
+  content: '';
+  position: absolute;
+  top: -115px;
+  width: 0;
+  height: 0;
+  border-bottom: 115px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+
+.register-box {
+  position: absolute;
+  width: 431px;
+  height: 530px;
+  padding: 30px 30px 20px 30px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+          box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+  top: -235px;
+  right: 70px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.register-box h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.register-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-box input {
+  height: 53px;
+  margin-bottom: 20px;
+}
+
+.register-box .submit {
+  width: 371px;
+  height: 58px;
+  border-radius: 5px;
+  background-color: #90d23d;
+  color: #fefefe;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.register-box P {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 21px auto;
+}
+
+.envato-elite {
+  width: 100%;
+  background-color: #4a454b;
+  color: #fefefe;
+  position: relative;
+  width: 100vw;
+  z-index: 2;
+  margin-top: 200px;
+}
+
+.envato-elite .envato-elite-content {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.envato-elite .envato-elite-content h2 {
+  padding-top: 0;
+}
+
+.envato-elite .envato-elite-content .envato-elite-btn {
+  border-radius: 15px;
+  background-color: #90d23d;
+  width: 200px;
+  height: 55px;
+  color: #fefefe;
+  font-size: 18px;
+}
+
+.envato-elite :before {
+  content: '';
+  position: absolute;
+  top: -115px;
+  width: 0;
+  height: 0;
+  border-bottom: 115px solid #4a454b;
+  border-left: 100vw solid transparent;
+}
+
+.speakers {
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  color: #fefefe;
+  position: relative;
+  width: 100vw;
+  z-index: 2;
+}
+
+.speakers:before {
+  content: '';
+  position: absolute;
+  top: -115px;
+  width: 0;
+  height: 0;
+  border-bottom: 115px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+/*# sourceMappingURL=style.css.map */

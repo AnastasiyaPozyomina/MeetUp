@@ -1,0 +1,240 @@
+// шрипфт
+$main-fonts:'Roboto',
+sans-serif;
+$thin-bold:100;
+$ligth-bold:300;
+$regular-bold:400;
+$medium-bold:500;
+$bold:700;
+$black:900;
+
+// размер шрифта
+$menu:15px;
+$h2:50px;
+$h3:35px;
+$h4:30px;
+$h5:22px;
+$p:14px;
+$font-button:22px;
+
+// цвета
+$dark-background:#4a454b;
+$light-background:#ffffff;
+$complementary-background:#90d23d;
+$dark-font:#242424;
+$ligth-font:#fefefe;
+
+
+
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    font-family: $main-fonts;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+// Header
+.header {
+    background-color: $dark-background;
+    height: 100vh;
+
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 140;
+
+        nav {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-right: 36px;
+
+                a {
+                    text-decoration: none;
+                    color: $light-background;
+                    text-transform: uppercase;
+                    font-weight: $thin-bold;
+                    font-size: $menu;
+                }
+            }
+        }
+    }
+}
+
+// блок event deatails
+.event-details {
+    position: relative;
+    width: 100%;
+    background: $light-background;
+    z-index: 2;
+
+    h2 {
+        font-size: $h2;
+        font-weight: $black;
+        padding-top: 63px;
+    }
+
+    p {
+        width: 50%;
+        margin-top: 23px;
+    }
+
+    .advantages-event {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3 {
+            font-size: $h3;
+            font-weight: $black;
+        }
+    }
+
+    .table-time-events {
+        width: 100%;
+        color: $ligth-font;
+
+        .title-tr {
+            background: #a3cc40;
+            height: 75px;
+        }
+
+        tr:nth-child(odd) {
+            background: #4b4d4f;
+        }
+
+        tr:nth-child(even) {
+            background: #373737;
+        }
+    }
+
+
+}
+
+.event-details:before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 0;
+    height: 0;
+    border-bottom: 115px solid $light-background;
+    border-left: 100vw solid transparent;
+}
+
+// блок регистрации
+.register-box {
+    position: absolute;
+    width: 431px;
+    height: 530px;
+    padding: 30px 30px 20px 30px;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    top: -235px;
+    right: 70px;
+    z-index: 1;
+    background-color: $light-background;
+
+    h4 {
+        font-size: $h4;
+        font-weight: $bold;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        height: 53px;
+        margin-bottom: 20px;
+    }
+
+    .submit {
+        width: 371px;
+        height: 58px;
+        border-radius: 5px;
+        background-color: $complementary-background;
+        color: $ligth-font;
+        font-weight: $bold;
+        font-size: $font-button;
+        margin: 0 auto;
+    }
+
+    P {
+        font-size: 15px;
+        font-weight: $ligth-bold;
+        margin: 21px auto;
+    }
+}
+
+.envato-elite {
+    width: 100%;
+    background-color: $dark-background;
+    color: $ligth-font;
+    position: relative;
+    width: 100vw;
+    z-index: 2;
+    margin-top: 200px;
+
+    .envato-elite-content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h2 {
+            padding-top: 0;
+        }
+
+        .envato-elite-btn {
+            border-radius: 15px;
+            background-color: $complementary-background;
+            width: 200px;
+            height: 55px;
+            color: $ligth-font;
+            font-size: 18px;
+        }
+    }
+
+}
+
+.envato-elite :before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 0;
+    height: 0;
+    border-bottom: 115px solid $dark-background;
+    border-left: 100vw solid transparent;
+}
+
+.speakers {
+    width: 100%;
+    height: 200px;
+    background-color: $light-background;
+    color: $ligth-font;
+    position: relative;
+    width: 100vw;
+    z-index: 2;  
+}
+
+.speakers:before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 0;
+    height: 0;
+    border-bottom: 115px solid $light-background;
+    border-left: 100vw solid transparent;
+}
