@@ -2,7 +2,7 @@
 $main-fonts:'Roboto',
 sans-serif;
 $thin-bold:100;
-$ligth-bold:300;
+$light-bold:300;
 $regular-bold:400;
 $medium-bold:500;
 $bold:700;
@@ -22,7 +22,7 @@ $dark-background:#4a454b;
 $light-background:#ffffff;
 $complementary-background:#90d23d;
 $dark-font:#242424;
-$ligth-font:#fefefe;
+$light-font:#fefefe;
 
 
 
@@ -41,19 +41,64 @@ body {
 
 }
 
+// Шрифты
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+
+
 // Header
 .header {
-    background-color: $dark-background;
-    height: 100vh;
+    position: relative;
+    height: 760px;
+
+
+    .bg-header {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+
 
     .top-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 140;
+        padding-top: 57px;
+        position: absolute;
+        margin-bottom: 116px;
+        width: 85vw;
+
+        .logo {
+            margin-left: 18px;
+        }
 
         nav {
             display: flex;
+            margin-right: 15px;
+            margin-top: 15px;
+            padding: 10px;
 
             li {
                 list-style: none;
@@ -65,8 +110,47 @@ body {
                     text-transform: uppercase;
                     font-weight: $thin-bold;
                     font-size: $menu;
+                    padding: 10px;
                 }
             }
+        }
+    }
+
+    #timer {
+        height: 100px;
+        border-width: 2px;
+        border-color: rgb(144, 210, 61);
+        border-style: solid;
+        border-radius: 20px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 968px;
+        height: 194px;
+        padding: 33px 84.5px 18px 84.5px;
+        margin: 0 auto;
+        margin-top: 224px;
+
+
+        span {
+            font-size: 130px;
+            color: $light-font;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+
+        .timer-item {
+            display: flex;
+            flex-direction: column;
+            font-size: 25px;
+            color: $light-font;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            text-align: center;
+            margin-right: 40px;
+            text-transform: uppercase;
+            margin: 0 auto;
         }
     }
 }
@@ -78,58 +162,90 @@ body {
     background: $light-background;
     z-index: 2;
 
-    h2 {
-        font-size: $h2;
-        font-weight: $black;
-        padding-top: 63px;
-    }
+    .event-details-content {
+        margin-bottom: 120px;
 
-    p {
-        width: 50%;
-        margin-top: 23px;
+        h2 {
+            font-weight: $black;
+            padding-top: 63px;
+        }
+
+        p {
+            width: 50%;
+            margin-top: 23px;
+        }
     }
 
     .advantages-event {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 90px;
 
-        h3 {
-            font-size: $h3;
-            font-weight: $black;
+        .advantages-event-items {
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            h3 {
+                font-weight: $black;
+                margin-top: 33px;
+                margin-bottom: 16.5px;
+                text-align: center;
+            }
+
+            p {
+                width: 300px;
+                text-align: center;
+                line-height: 1.2;
+            }
         }
+
     }
 
     .table-time-events {
         width: 100%;
-        color: $ligth-font;
+        color: $light-font;
+        border-radius: 15PX;
+        width: 1030px;
+        height: 375px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+
 
         .title-tr {
             background: #a3cc40;
             height: 75px;
+            text-align: left;
+            font-weight: $black;
         }
 
-        tr:nth-child(odd) {
+        tr {
             background: #4b4d4f;
+
         }
 
         tr:nth-child(even) {
             background: #373737;
         }
+
+        td {
+            padding: 20px;
+        }
     }
 
+    .table-text {
+        line-height: 1.2;
+        margin: 0 auto;
+        text-align: center;
+        width: 73%;
+        margin-bottom: 312px;
+    }
 
 }
 
-.event-details:before {
-    content: '';
-    position: absolute;
-    top: -115px;
-    width: 0;
-    height: 0;
-    border-bottom: 115px solid $light-background;
-    border-left: 100vw solid transparent;
-}
 
 // блок регистрации
 .register-box {
@@ -139,12 +255,11 @@ body {
     padding: 30px 30px 20px 30px;
     box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
     top: -235px;
-    right: 70px;
+    right: 155px;
     z-index: 1;
     background-color: $light-background;
 
     h4 {
-        font-size: $h4;
         font-weight: $bold;
         margin-bottom: 23px;
         text-align: center;
@@ -165,7 +280,7 @@ body {
         height: 58px;
         border-radius: 5px;
         background-color: $complementary-background;
-        color: $ligth-font;
+        color: $light-font;
         font-weight: $bold;
         font-size: $font-button;
         margin: 0 auto;
@@ -173,28 +288,46 @@ body {
 
     P {
         font-size: 15px;
-        font-weight: $ligth-bold;
+        font-weight: $light-bold;
         margin: 21px auto;
+        line-height: 1.2;
     }
 }
 
 .envato-elite {
     width: 100%;
     background-color: $dark-background;
-    color: $ligth-font;
+    color: $light-font;
     position: relative;
-    width: 100vw;
-    z-index: 2;
-    margin-top: 200px;
+
+
+    .envanto-elite-badge {
+        margin-top: -150px;
+        position: relative;
+        z-index: 10;
+    }
 
     .envato-elite-content {
-        width: 70%;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        margin-left: 50%;
+
+
 
         h2 {
             padding-top: 0;
+            margin-bottom: 28.5px;
+            text-align: right;
+            font-weight: $black;
+        }
+
+        p {
+            line-height: 1.2;
+            text-align: right;
+            width: 665px;
+            margin-bottom: 20px;
+            font-weight: $light-bold;
         }
 
         .envato-elite-btn {
@@ -202,14 +335,15 @@ body {
             background-color: $complementary-background;
             width: 200px;
             height: 55px;
-            color: $ligth-font;
+            color: $light-font;
             font-size: 18px;
+            margin-bottom: 145px;
         }
     }
 
 }
 
-.envato-elite :before {
+.envato-elite :after {
     content: '';
     position: absolute;
     top: -115px;
@@ -220,16 +354,176 @@ body {
 }
 
 .speakers {
-    width: 100%;
-    height: 200px;
     background-color: $light-background;
-    color: $ligth-font;
     position: relative;
-    width: 100vw;
-    z-index: 2;  
+    width: 100%;
+    
+
+    h2 {
+        font-weight: $black;
+        
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: $light-font;
+        width: 50%;
+        line-height:1.2;
+    }
+
+    .speakers-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: flex-start;
+        margin-bottom: 239px;
+
+        .speakers-gallery-item {
+            background-color: $complementary-background;
+            border-radius: 15px;
+            width: 296px;
+            height: 296px;
+            margin: 42px;
+        }
+        .img-5 {
+            background-color: white;
+            text-align: center;
+        }
+    }
 }
 
-.speakers:before {
+.speakers :before{
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 0;
+    height: 0;
+    border-bottom: 115px solid $light-background;
+    border-left: 100vw solid transparent;
+    z-index: 10;
+}
+
+
+
+.sponsors {
+    background-color: $dark-background;
+    position: relative;
+    width: 100vw;
+    padding-bottom: 67px;
+
+    .sponsors-wrapper {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 33px;
+            color: $light-font;
+            font-weight: $black;
+        }
+
+        p {
+            line-height: 1.2;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            color: $light-font;
+            font-weight: $thin-bold;
+            margin-bottom: 18px;
+        }
+
+        .sponsors-logo-img {
+            margin-bottom: 56px;
+
+            img {
+                margin-right: 77px;
+            }
+        }
+
+        .sponsors-btn {
+            width: 200px;
+            height: 55px;
+            border-radius: 15px;
+            background-color: $complementary-background;
+            margin-bottom: 60px;
+            color: $light-font;
+            font-weight: $regular-bold;
+            font-size: 22px;
+        }
+    }
+}
+
+.sponsors:before {
+    content: '';
+    position: absolute;
+    top: -115px;
+    width: 0;
+    height: 0;
+    border-bottom: 115px solid $dark-background;
+    border-left: 100vw solid transparent;
+}
+
+.past-events {
+    background-color: $light-background;
+    position: relative;
+    width: 100vw;
+    padding-top: 115px;
+
+    .container {
+
+        h2 {
+            color: $dark-font;
+            font-weight: $black;
+            margin-bottom: 33px;
+        }
+
+        p {
+            font-weight: $light-bold;
+            width: 51%;
+            margin-bottom: 103px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 409px 367px;
+            grid-template-areas:
+                'b b b b b b b g g g g g'
+                'o o o o o o r r r r r r';
+            margin-bottom: 97px;
+
+            .grid-item1 {
+                background-color: #3d6ed2;
+                grid-area: b;
+            }
+
+            .grid-item2 {
+                background-color: #90d23d;
+                grid-area: g;
+            }
+
+            .grid-item3 {
+                background-color: #ff9d00;
+                grid-area: o;
+            }
+
+            .grid-item4 {
+                background-color: #e0652a;
+                grid-area: r;
+            }
+
+        }
+
+        .past-events-btn {
+            border-radius: 15px;
+            background-color: rgb(55, 55, 55);
+            width: 200px;
+            height: 55px;
+            color: $light-font;
+           
+        }
+    }
+}
+
+.past-events :before {
     content: '';
     position: absolute;
     top: -115px;
