@@ -1,7 +1,7 @@
 // таймер обратного отчета
 // В теле функции initializeTimer мы инициализируем наш таймер и пишем логику изменений чисел в случае когда одно из них становится равным нулём:
 function initializeTimer() {
-	var endDate = new Date(2019,11,31,00,00);
+	var endDate = new Date(2020,0,1,00,00);
  
 	var currentDate = new Date();
 	var seconds = (endDate-currentDate) / 1000;

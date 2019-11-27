@@ -524,4 +524,203 @@ p {
   border-bottom: 115px solid #ffffff;
   border-left: 100vw solid transparent;
 }
+
+.contact-form-and-map {
+  position: absolute;
+  width: 100%;
+}
+
+.contact-form-and-map .map-bg {
+  position: absolute;
+  width: 100%;
+}
+
+.contact-form-and-map .map-bg img {
+  width: 100%;
+}
+
+.contact-form-and-map .contact-form-wrapper {
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: 64px;
+  padding: 58px 70px 52px 100px;
+  background-color: #ffffff;
+}
+
+.contact-form-and-map .contact-form-wrapper .address {
+  width: 50%;
+}
+
+.contact-form-and-map .contact-form-wrapper .address img {
+  text-align: center;
+  display: block;
+}
+
+.contact-form-and-map .contact-form-wrapper .address .btn-map {
+  border-radius: 15px;
+  background-color: #90d23d;
+  width: 200px;
+  height: 55px;
+  color: #fefefe;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 33px;
+}
+
+.contact-form-and-map .contact-form-wrapper .address p {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #242424;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #90d23d;
+  padding: 43px 330px 14px 400px;
+  height: 200px;
+}
+
+footer .social-buttons {
+  padding: 17px 27px 14px 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-behance_sm {
+  width: 34px;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -144px -146px;
+  display: block;
+}
+
+.bg-dribbble_sm_ {
+  width: 33px;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -198px -146px;
+  display: block;
+}
+
+.bg-facebook {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -77px -78px;
+  display: block;
+}
+
+.bg-facebook_sm {
+  width: 33px;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -63px -213px;
+  display: block;
+}
+
+.bg-facebook_white {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -144px -78px;
+  margin-right: 11px;
+}
+
+.bg-google_plus_white {
+  width: 47px;
+  height: 48px;
+  background: url("img/sprites/css_sprites.png") -10px -10px;
+  display: block;
+  margin-right: 15.3px;
+}
+
+.bg-google_plus {
+  width: 47px;
+  height: 48px;
+  background: url("img/sprites/css_sprites.png") -77px -10px;
+  display: block;
+}
+
+.bg-Go_Up_Button {
+  width: 31px;
+  height: 19px;
+  background: url("img/sprites/css_sprites.png") -278px -36px;
+  display: block;
+}
+
+.bg-Go_Up_Button_white {
+  width: 31px;
+  height: 19px;
+  background: url("img/sprites/css_sprites.png") -329px -36px;
+  display: block;
+}
+
+.bg-icon {
+  width: 33px;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -116px -213px;
+  display: block;
+}
+
+.bg-line {
+  width: 83px;
+  height: 6px;
+  background: url("img/sprites/css_sprites.png") -278px -10px;
+  display: block;
+}
+
+.bg-linkedin {
+  width: 47px;
+  height: 48px;
+  background: url("img/sprites/css_sprites.png") -144px -10px;
+  display: block;
+}
+
+.bg-linkedin_white {
+  width: 47px;
+  height: 48px;
+  background: url("img/sprites/css_sprites.png") -10px -78px;
+  display: block;
+  margin-right: 14.6px;
+}
+
+.bg-More_icon_green {
+  width: 33px;
+  height: 34px;
+  background: url("img/sprites/css_sprites.png") -10px -213px;
+  display: block;
+}
+
+.bg-tumblr {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -211px -10px;
+  display: block;
+}
+
+.bg-tumblr_white {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -211px -77px;
+  display: block;
+}
+
+.bg-twitter {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -10px -146px;
+  display: block;
+}
+
+.bg-twitter_sm {
+  width: 33px;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -169px -213px;
+  display: block;
+}
+
+.bg-twitter_white {
+  width: 47px;
+  height: 47px;
+  background: url("img/sprites/css_sprites.png") -77px -146px;
+  display: block;
+  margin-right: 13px;
+}
 /*# sourceMappingURL=style.css.map */
