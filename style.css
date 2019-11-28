@@ -130,7 +130,6 @@ p {
   text-align: center;
   margin-right: 40px;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .event-details {
@@ -283,12 +282,13 @@ p {
 }
 
 .envato-elite .envanto-elite-badge {
-  margin-top: -150px;
+  margin-top: -201px;
   position: relative;
-  z-index: 10;
+  z-index: 100;
+  margin-left: 70px;
 }
 
-.envato-elite .envato-elite-content {
+.envato-elite .container .envato-elite-content {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,14 +300,14 @@ p {
   margin-left: 50%;
 }
 
-.envato-elite .envato-elite-content h2 {
+.envato-elite .container .envato-elite-content h2 {
   padding-top: 0;
   margin-bottom: 28.5px;
   text-align: right;
   font-weight: 900;
 }
 
-.envato-elite .envato-elite-content p {
+.envato-elite .container .envato-elite-content p {
   line-height: 1.2;
   text-align: right;
   width: 665px;
@@ -315,7 +315,7 @@ p {
   font-weight: 300;
 }
 
-.envato-elite .envato-elite-content .envato-elite-btn {
+.envato-elite .container .envato-elite-content .envato-elite-btn {
   border-radius: 15px;
   background-color: #90d23d;
   width: 200px;
@@ -325,7 +325,7 @@ p {
   margin-bottom: 145px;
 }
 
-.envato-elite :after {
+.envato-elite:before {
   content: '';
   position: absolute;
   top: -115px;
@@ -339,20 +339,21 @@ p {
   background-color: #ffffff;
   position: relative;
   width: 100%;
+  padding-top: 165px;
 }
 
-.speakers h2 {
+.speakers .container h2 {
   font-weight: 900;
   margin-bottom: 20px;
 }
 
-.speakers p {
+.speakers .container p {
   font-weight: #fefefe;
   width: 50%;
   line-height: 1.2;
 }
 
-.speakers .speakers-gallery {
+.speakers .container .speakers-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +366,7 @@ p {
   margin-bottom: 239px;
 }
 
-.speakers .speakers-gallery .speakers-gallery-item {
+.speakers .container .speakers-gallery .speakers-gallery-item {
   background-color: #90d23d;
   border-radius: 15px;
   width: 296px;
@@ -373,12 +374,12 @@ p {
   margin: 42px;
 }
 
-.speakers .speakers-gallery .img-5 {
+.speakers .container .speakers-gallery .img-5 {
   background-color: white;
   text-align: center;
 }
 
-.speakers :before {
+.speakers:before {
   content: '';
   position: absolute;
   top: -115px;
@@ -404,6 +405,7 @@ p {
   margin-bottom: 33px;
   color: #fefefe;
   font-weight: 900;
+  padding-top: 80px;
 }
 
 .sponsors .sponsors-wrapper p {
@@ -450,6 +452,7 @@ p {
   position: relative;
   width: 100vw;
   padding-top: 115px;
+  padding-bottom: 94px;
 }
 
 .past-events .container h2 {
@@ -513,9 +516,11 @@ p {
   width: 200px;
   height: 55px;
   color: #fefefe;
+  display: block;
+  margin: 0 auto;
 }
 
-.past-events :before {
+.past-events::before {
   content: '';
   position: absolute;
   top: -115px;
@@ -526,37 +531,56 @@ p {
 }
 
 .contact-form-and-map {
-  position: absolute;
   width: 100%;
+  background-image: url(img/Map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 63.5px 100px 60px 100px;
 }
 
-.contact-form-and-map .map-bg {
-  position: absolute;
+.contact-form-and-map .container .contact-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
-}
-
-.contact-form-and-map .map-bg img {
-  width: 100%;
-}
-
-.contact-form-and-map .contact-form-wrapper {
   position: relative;
   margin-top: 65px;
   margin-bottom: 64px;
   padding: 58px 70px 52px 100px;
   background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.contact-form-and-map .contact-form-wrapper .address {
+.contact-form-and-map .container .contact-form-wrapper .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 50%;
+  padding: 35px 30px 50px 0px;
+  margin-right: 100px;
 }
 
-.contact-form-and-map .contact-form-wrapper .address img {
-  text-align: center;
-  display: block;
+.contact-form-and-map .container .contact-form-wrapper .address img {
+  margin: 0 auto;
 }
 
-.contact-form-and-map .contact-form-wrapper .address .btn-map {
+.contact-form-and-map .container .contact-form-wrapper .address p {
+  padding: 10px 30px 10px 30px;
+  margin-top: 34px;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .address .btn-map {
   border-radius: 15px;
   background-color: #90d23d;
   width: 200px;
@@ -564,10 +588,10 @@ p {
   color: #fefefe;
   font-weight: 400;
   text-transform: capitalize;
-  margin-top: 33px;
+  margin: 33px auto;
 }
 
-.contact-form-and-map .contact-form-wrapper .address p {
+.contact-form-and-map .container .contact-form-wrapper .address p {
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
@@ -575,17 +599,65 @@ p {
   font-weight: 300;
 }
 
+.contact-form-and-map .container .contact-form-wrapper .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: 400px;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .contact-form input {
+  height: 56px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #90d23d;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .contact-form textarea {
+  height: 249px;
+  margin-top: 25px;
+  margin-bottom: 29px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bebebe;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .contact-form .contact-form-btn {
+  border-radius: 5px;
+  background-color: #373737;
+  width: 100%;
+  height: 60px;
+  color: #fefefe;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
 footer {
   background-color: #90d23d;
   padding: 43px 330px 14px 400px;
-  height: 200px;
 }
 
-footer .social-buttons {
+footer .container .social-wrapper .social-buttons {
   padding: 17px 27px 14px 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer .container .social-wrapper .social-content {
+  font-weight: 300;
+  font-size: 18px;
+  color: #fefefe;
 }
 
 .bg-behance_sm {
