@@ -575,6 +575,7 @@ p {
                 width: 50%;
                 padding: 35px 30px 50px 0px;
                 margin-right: 100px;
+                position: relative;
 
                 img {
                     margin: 0 auto;
@@ -594,6 +595,8 @@ p {
                     font-weight: $regular-bold;
                     text-transform: capitalize;
                     margin: 33px auto;
+                    cursor: pointer;
+                    display: block;
                 }
 
                 p {
@@ -603,6 +606,20 @@ p {
                     color: $dark-font;
                     font-weight: $light-bold;
                 }
+
+
+                .map-wrapper .iframe-container {
+                    display: none;
+                }
+
+                .map-wrapper.open .iframe-container {
+                    display: block;
+                    position: absolute;
+
+                }
+
+
+
             }
 
             .contact-form {
@@ -645,6 +662,38 @@ p {
     }
 }
 
+// крестик для закрытияя карты
+.remove-button {
+    position: absolute;
+    font-size: 100%;
+    top: 0;
+    color: $light-font;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000;
+    margin-top: -10px;
+    margin-right: -19px;
+    background-color: $complementary-background;
+    font-weight: $black;
+}
+
+.remove-button:hover {
+
+    background-color: rgb(55, 55, 55);
+}
+
+.pane {
+    padding: 5px;
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgb(144, 210, 61);
+    top: 2px;
+}
+
 // footer
 footer {
 
@@ -653,7 +702,7 @@ footer {
 
     .container {
         .social-wrapper {
-           
+
             .social-buttons {
                 padding: 17px 27px 14px 39px;
                 display: flex;

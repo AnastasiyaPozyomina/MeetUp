@@ -569,6 +569,7 @@ p {
   width: 50%;
   padding: 35px 30px 50px 0px;
   margin-right: 100px;
+  position: relative;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address img {
@@ -589,6 +590,8 @@ p {
   font-weight: 400;
   text-transform: capitalize;
   margin: 33px auto;
+  cursor: pointer;
+  display: block;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address p {
@@ -597,6 +600,15 @@ p {
   text-align: center;
   color: #242424;
   font-weight: 300;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .address .map-wrapper .iframe-container {
+  display: none;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .address .map-wrapper.open .iframe-container {
+  display: block;
+  position: absolute;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .contact-form {
@@ -640,6 +652,36 @@ p {
   color: #fefefe;
   font-size: 22px;
   text-transform: capitalize;
+}
+
+.remove-button {
+  position: absolute;
+  font-size: 100%;
+  top: 0;
+  color: #fefefe;
+  right: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  margin-top: -10px;
+  margin-right: -19px;
+  background-color: #90d23d;
+  font-weight: 900;
+}
+
+.remove-button:hover {
+  background-color: #373737;
+}
+
+.pane {
+  padding: 5px;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #90d23d;
+  top: 2px;
 }
 
 footer {

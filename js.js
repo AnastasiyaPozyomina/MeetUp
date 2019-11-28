@@ -74,3 +74,26 @@ function setTimePage(d,h,m,s) {
 	seconds.innerHTML = s;
  
 }
+
+
+
+// яндекс карта
+
+  let mapElem = document.getElementById('map');
+  let btnElem = mapElem.querySelector('.btn-map');
+
+  btnElem.onclick = function() {
+	mapElem.classList.toggle('open');
+  };
+
+//   mapElem.classList.toggle('open');
+//   закрыть яндекс карту 
+let panes = document.querySelectorAll('.pane');
+
+    for(let pane of panes) {
+      pane.insertAdjacentHTML("afterbegin", '<button class="remove-button">x</button>');
+      // кнопка становится первым потомком плитки (pane)
+      pane.onclick = () => pane.remove();
+	}
+	
+
