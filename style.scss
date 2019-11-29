@@ -76,6 +76,7 @@ p {
         position: absolute;
         width: 100%;
         height: 100%;
+
     }
 
 
@@ -84,25 +85,41 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 140;
-        padding-top: 57px;
         position: absolute;
         margin-bottom: 116px;
-        width: 85vw;
+        background-color: $dark-background;
+        z-index: 1500;
+        position: fixed;
+        width: 100%;
+        padding: 27px 166px 20px 168px;
 
         .logo {
             margin-left: 18px;
+
+            :hover {
+                transform: scale(0.8);
+            }
         }
 
         nav {
             display: flex;
-            margin-right: 15px;
-            margin-top: 15px;
-            padding: 10px;
+            margin-right: 267px;
+            padding-top: 15px;
+
 
             li {
                 list-style: none;
                 margin-right: 36px;
+                padding: 10px 10px 10px 10px;
+
+
+                :hover {
+
+                    font-weight: $bold;
+                    border-top: 4px solid $complementary-background;
+
+
+                }
 
                 a {
                     text-decoration: none;
@@ -110,11 +127,18 @@ p {
                     text-transform: uppercase;
                     font-weight: $thin-bold;
                     font-size: $menu;
-                    padding: 10px;
+                    padding: 30px 10px;
+
+
                 }
             }
         }
     }
+
+
+
+
+
 
     #timer {
         height: 100px;
@@ -127,18 +151,12 @@ p {
         flex-direction: row;
         width: 968px;
         height: 194px;
-        padding: 33px 84.5px 18px 84.5px;
+        padding: 33px 80px 18px 80px;
         margin: 0 auto;
         margin-top: 224px;
 
 
-        span {
-            font-size: 130px;
-            color: $light-font;
-            font-family: 'Roboto Slab', serif;
-            font-weight: 100;
-            text-transform: uppercase;
-        }
+
 
         .timer-item {
             display: flex;
@@ -148,9 +166,23 @@ p {
             font-family: 'Roboto Slab', serif;
             font-weight: 400;
             text-align: center;
-            margin-right: 40px;
             text-transform: uppercase;
+            padding: 0 20px;
 
+            span {
+                font-size: 130px;
+                color: $light-font;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 100;
+                text-transform: uppercase;
+                margin-right: 10px;
+
+
+            }
+
+            i {
+                padding: 10px 20px 10px 20px;
+            }
         }
     }
 }
@@ -597,6 +629,8 @@ p {
                     margin: 33px auto;
                     cursor: pointer;
                     display: block;
+
+                   
                 }
 
                 p {
@@ -610,6 +644,7 @@ p {
 
                 .map-wrapper .iframe-container {
                     display: none;
+                    top: 0;
                 }
 
                 .map-wrapper.open .iframe-container {
@@ -618,7 +653,7 @@ p {
 
                 }
 
-
+              
 
             }
 
@@ -686,13 +721,15 @@ p {
     background-color: rgb(55, 55, 55);
 }
 
-.pane {
+#pane {
     padding: 5px;
-    position: absolute;
+    position: relative;
     border-radius: 15px;
-    background-color: rgb(144, 210, 61);
+    background-color: $complementary-background;
     top: 2px;
 }
+
+
 
 // footer
 footer {
@@ -869,4 +906,26 @@ footer {
     background: url('img/sprites/css_sprites.png') -77px -146px;
     display: block;
     margin-right: 13px;
+}
+
+
+// якоря
+
+#event-details {
+    position: relative;
+    /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
+    border-top: 65px solid transparent;
+    margin-top: -65px;
+    background-clip: padding-box;
+}
+
+#event-details:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    /* равен по модулю толщине border */
+    left: 0;
+    right: 0;
+    border-top: 10px solid transparent;
+    /* собственно то, ради чего всё затевалось */
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   scroll-behavior: smooth;
@@ -52,29 +53,41 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 140;
-  padding-top: 57px;
   position: absolute;
   margin-bottom: 116px;
-  width: 85vw;
+  background-color: #4a454b;
+  z-index: 1500;
+  position: fixed;
+  width: 100%;
+  padding: 27px 166px 20px 168px;
 }
 
 .header .top-header .logo {
   margin-left: 18px;
 }
 
+.header .top-header .logo :hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .header .top-header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 15px;
-  margin-top: 15px;
-  padding: 10px;
+  margin-right: 267px;
+  padding-top: 15px;
 }
 
 .header .top-header nav li {
   list-style: none;
   margin-right: 36px;
+  padding: 10px 10px 10px 10px;
+}
+
+.header .top-header nav li :hover {
+  font-weight: 700;
+  border-top: 4px solid #90d23d;
 }
 
 .header .top-header nav li a {
@@ -83,7 +96,7 @@ p {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 15px;
-  padding: 10px;
+  padding: 30px 10px;
 }
 
 .header #timer {
@@ -102,17 +115,9 @@ p {
           flex-direction: row;
   width: 968px;
   height: 194px;
-  padding: 33px 84.5px 18px 84.5px;
+  padding: 33px 80px 18px 80px;
   margin: 0 auto;
   margin-top: 224px;
-}
-
-.header #timer span {
-  font-size: 130px;
-  color: #fefefe;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
-  text-transform: uppercase;
 }
 
 .header #timer .timer-item {
@@ -128,8 +133,21 @@ p {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   text-align: center;
-  margin-right: 40px;
   text-transform: uppercase;
+  padding: 0 20px;
+}
+
+.header #timer .timer-item span {
+  font-size: 130px;
+  color: #fefefe;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.header #timer .timer-item i {
+  padding: 10px 20px 10px 20px;
 }
 
 .event-details {
@@ -604,6 +622,7 @@ p {
 
 .contact-form-and-map .container .contact-form-wrapper .address .map-wrapper .iframe-container {
   display: none;
+  top: 0;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address .map-wrapper.open .iframe-container {
@@ -676,9 +695,9 @@ p {
   background-color: #373737;
 }
 
-.pane {
+#pane {
   padding: 5px;
-  position: absolute;
+  position: relative;
   border-radius: 15px;
   background-color: #90d23d;
   top: 2px;
@@ -836,5 +855,24 @@ footer .container .social-wrapper .social-content {
   background: url("img/sprites/css_sprites.png") -77px -146px;
   display: block;
   margin-right: 13px;
+}
+
+#event-details {
+  position: relative;
+  /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
+  border-top: 65px solid transparent;
+  margin-top: -65px;
+  background-clip: padding-box;
+}
+
+#event-details:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  /* равен по модулю толщине border */
+  left: 0;
+  right: 0;
+  border-top: 10px solid transparent;
+  /* собственно то, ради чего всё затевалось */
 }
 /*# sourceMappingURL=style.css.map */
