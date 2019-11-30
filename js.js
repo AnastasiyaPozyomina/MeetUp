@@ -7,14 +7,18 @@
   let rembtnElem = paneElem.querySelector('.remove-button');
 
 // открытие карты через обработчик события и display:block
-  btnElem.onclick = function() {
-	mapElem.classList.toggle('open');
+
+btnElem.onclick = function() {
+  mapElem.classList.toggle('open');
+
 };
+
+  
+
 
 // удалениие карты и автоматическая перезагрузка страницы
 rembtnElem.onclick = function() {
-	paneElem.remove();
-	location.reload();
+ mapElem.classList.toggle('open');
 };
 
 

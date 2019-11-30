@@ -727,8 +727,12 @@ p {
     border-radius: 15px;
     background-color: $complementary-background;
     top: 2px;
+    display: block;
 }
 
+#pane.close {
+    display: none;
+}
 
 
 // footer

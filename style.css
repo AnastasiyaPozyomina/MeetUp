@@ -701,6 +701,11 @@ p {
   border-radius: 15px;
   background-color: #90d23d;
   top: 2px;
+  display: block;
+}
+
+#pane.close {
+  display: none;
 }
 
 footer {
