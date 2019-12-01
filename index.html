@@ -25,7 +25,7 @@
                 <nav>
                     <li><a href="#event-details">Event Details</a></li>
                     <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#sponsor">Sponsors</a></li>
                     <li><a href="#past-events">Past Events</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </nav>
@@ -194,7 +194,7 @@
             </div>
         </section>
 
-        <section class="sponsors" id="sponsors">
+        <section class="sponsors" id="sponsor">
             <div class="container">
                 <div class="sponsors-wrapper">
                     <h2>Sponsor Our Event!</h2>
@@ -237,19 +237,20 @@
                         <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
                       <div class="map-wrapper" id="map">
                         <button class="btn-map">View Map</button>
-                        <div class="iframe-container">
-                            <div id="pane">
+                        <div class="iframe-container" >
+                            <div id="view-map">
                             <iframe src="https://yandex.ru/map-widget/v1/-/CGdenP7~" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
                             <button class="remove-button">x</button>
                         </div>
                         </div>
                     </div>
                     </div>
-                    <div class="contact-form">
-                        <input type="email" required placeholder="ingeniousartist@gmail.com|">
+                    <form class="contact-form" action="" method="post" id="email">
+                        <input type="email" required>
                         <textarea> </textarea>
                         <button class="contact-form-btn" type="button">Send Message</button>
-                    </div>
+                    </form>
+                    
                 </div>
         </section>
     </main>

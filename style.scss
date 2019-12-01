@@ -627,10 +627,16 @@ p {
                     font-weight: $regular-bold;
                     text-transform: capitalize;
                     margin: 33px auto;
+                    font-size: 22px;
+                    ;
                     cursor: pointer;
                     display: block;
 
-                   
+                    :hover {
+                        transform: scale(0.8);
+                        background-color: #dark-background;
+                    }
+
                 }
 
                 p {
@@ -641,20 +647,36 @@ p {
                     font-weight: $light-bold;
                 }
 
+                #view-map {
+                    padding: 5px;
+                    position: relative;
+                    border-radius: 15px;
+                    background-color: #90d23d;
+                    top: 2px;
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                }
 
                 .map-wrapper .iframe-container {
                     display: none;
-                    top: 0;
+
                 }
 
                 .map-wrapper.open .iframe-container {
                     display: block;
                     position: absolute;
+                    top: 0;
 
                 }
 
-              
 
+
+            }
+
+            .btn-map:hover {
+                transform: scale(0.8);
+                background-color: $dark-background;
             }
 
             .contact-form {
@@ -691,10 +713,18 @@ p {
                     color: $light-font;
                     font-size: 22px;
                     text-transform: capitalize;
+
+
+
                 }
             }
         }
     }
+}
+
+.contact-form-btn:hover {
+    transform: scale(0.8);
+
 }
 
 // крестик для закрытияя карты
@@ -721,18 +751,6 @@ p {
     background-color: rgb(55, 55, 55);
 }
 
-#pane {
-    padding: 5px;
-    position: relative;
-    border-radius: 15px;
-    background-color: $complementary-background;
-    top: 2px;
-    display: block;
-}
-
-#pane.close {
-    display: none;
-}
 
 
 // footer

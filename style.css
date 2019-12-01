@@ -608,8 +608,15 @@ p {
   font-weight: 400;
   text-transform: capitalize;
   margin: 33px auto;
+  font-size: 22px;
   cursor: pointer;
   display: block;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .address .btn-map :hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-color: #dark-background;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address p {
@@ -620,14 +627,31 @@ p {
   font-weight: 300;
 }
 
+.contact-form-and-map .container .contact-form-wrapper .address #view-map {
+  padding: 5px;
+  position: relative;
+  border-radius: 15px;
+  background-color: #90d23d;
+  top: 2px;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 .contact-form-and-map .container .contact-form-wrapper .address .map-wrapper .iframe-container {
   display: none;
-  top: 0;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address .map-wrapper.open .iframe-container {
   display: block;
   position: absolute;
+  top: 0;
+}
+
+.contact-form-and-map .container .contact-form-wrapper .btn-map:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-color: #4a454b;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .contact-form {
@@ -673,6 +697,11 @@ p {
   text-transform: capitalize;
 }
 
+.contact-form-btn:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .remove-button {
   position: absolute;
   font-size: 100%;
@@ -693,19 +722,6 @@ p {
 
 .remove-button:hover {
   background-color: #373737;
-}
-
-#pane {
-  padding: 5px;
-  position: relative;
-  border-radius: 15px;
-  background-color: #90d23d;
-  top: 2px;
-  display: block;
-}
-
-#pane.close {
-  display: none;
 }
 
 footer {
