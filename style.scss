@@ -43,24 +43,24 @@ body {
 
 // Шрифты
 h2 {
-    font-size: 50px;
+    font-size: $h2;
 }
 
 h3 {
-    font-size: 35px;
+    font-size: $h3;
 }
 
 
 h4 {
-    font-size: 30px;
+    font-size: $h4;
 }
 
 h5 {
-    font-size: 22px;
+    font-size: $h5;
 }
 
 p {
-    font-size: 14px;
+    font-size: $p;
 }
 
 
@@ -138,7 +138,7 @@ p {
 
 
 
-
+    // timer
 
     #timer {
         height: 100px;
@@ -197,17 +197,24 @@ p {
     z-index: 2;
 
     .event-details-content {
-        margin-bottom: 120px;
+        margin-bottom: 129px;
 
         h2 {
             font-weight: $black;
             padding-top: 63px;
+            padding-bottom: 2px;
         }
 
         p {
             width: 50%;
             margin-top: 23px;
+            font-weight: $light-bold;
+
+            span {
+                font-weight: $medium-bold;
+            }
         }
+
     }
 
     .advantages-event {
@@ -267,7 +274,7 @@ p {
 
         td {
             padding: 20px;
-        }
+        
     }
 
     .table-text {
@@ -306,7 +313,17 @@ p {
 
     input {
         height: 53px;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
+        padding-left: 12px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(190, 190, 190);
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+    &:focus {
+        background-color: $complementary-background;
+       
+    }
     }
 
     .submit {
@@ -317,14 +334,20 @@ p {
         color: $light-font;
         font-weight: $bold;
         font-size: $font-button;
-        margin: 0 auto;
+        margin: 40px auto 0 auto;
+        &:hover {
+            transform: scale(0.8);
+            background-color: $dark-background;
+        }
     }
 
     P {
         font-size: 15px;
         font-weight: $light-bold;
-        margin: 21px auto;
+        margin-top: 19px;
         line-height: 1.2;
+        text-align: center;
+        
     }
 }
 
@@ -344,7 +367,7 @@ p {
 
     .container {
         .envato-elite-content {
-            width: 50%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             margin-left: 50%;
@@ -634,7 +657,7 @@ p {
 
                     :hover {
                         transform: scale(0.8);
-                        background-color: #dark-background;
+                        background-color: $dark-background;
                     }
 
                 }
@@ -853,9 +876,10 @@ footer {
 
 .bg-icon {
     width: 33px;
-    height: 33px;
-    background: url('img/sprites/css_sprites.png') -116px -213px;
-    display: block;
+  height: 33px;
+  background: url("img/sprites/css_sprites.png") -116px -213px;
+  display: block;
+}
 }
 
 

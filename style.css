@@ -164,11 +164,17 @@ p {
 .event-details .event-details-content h2 {
   font-weight: 900;
   padding-top: 63px;
+  padding-bottom: 2px;
 }
 
 .event-details .event-details-content p {
   width: 50%;
   margin-top: 23px;
+  font-weight: 300;
+}
+
+.event-details .event-details-content p span {
+  font-weight: 500;
 }
 
 .event-details .advantages-event {
@@ -271,7 +277,18 @@ p {
 
 .register-box input {
   height: 53px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  padding-left: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bebebe;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.register-box input:focus {
+  background-color: #90d23d;
+  opacity: 5;
 }
 
 .register-box .submit {
@@ -282,14 +299,21 @@ p {
   color: #fefefe;
   font-weight: 700;
   font-size: 22px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
+}
+
+.register-box .submit:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background-color: #4a454b;
 }
 
 .register-box P {
   font-size: 15px;
   font-weight: 300;
-  margin: 21px auto;
+  margin-top: 19px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .envato-elite {
@@ -307,7 +331,7 @@ p {
 }
 
 .envato-elite .container .envato-elite-content {
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,7 +516,8 @@ p {
       grid-template-columns: 100px 100px 100px 100px;
   -ms-grid-rows: 409px 367px;
       grid-template-rows: 409px 367px;
-      grid-template-areas: 'b b b b b b b g g g g g' 'o o o o o o r r r r r r';
+      grid-template-areas: 'b b b b b b b g g g g g'
+ 'o o o o o o r r r r r r';
   margin-bottom: 97px;
 }
 
@@ -616,7 +641,7 @@ p {
 .contact-form-and-map .container .contact-form-wrapper .address .btn-map :hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  background-color: #dark-background;
+  background-color: dark-background;
 }
 
 .contact-form-and-map .container .contact-form-wrapper .address p {

@@ -17,3 +17,5 @@ rembtnElem.onclick = function() {
  mapElem.classList.toggle('open');
 };
 
+
+
