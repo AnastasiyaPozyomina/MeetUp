@@ -96,8 +96,12 @@ p {
         .logo {
             margin-left: 18px;
 
-            :hover {
-                transform: scale(0.8);
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(0.5);
             }
         }
 
@@ -113,11 +117,14 @@ p {
                 padding: 10px 10px 10px 10px;
 
 
-                :hover {
-
-                    font-weight: $bold;
+                &:hover {
                     border-top: 4px solid $complementary-background;
 
+
+                }
+
+                &:active {
+                    transform: scale(0.6);
 
                 }
 
@@ -270,22 +277,26 @@ p {
 
         tr:nth-child(even) {
             background: #373737;
+
         }
 
         td {
             padding: 20px;
-        
-    }
 
-    .table-text {
-        line-height: 1.2;
-        margin: 0 auto;
-        text-align: center;
-        width: 73%;
-        margin-bottom: 312px;
-    }
 
-}
+        }
+
+      
+
+        .table-text {
+            line-height: 1.2;
+            margin: 0 auto;
+            text-align: center;
+            width: 73%;
+            margin-bottom: 312px;
+        }
+
+    }
 }
 
 
@@ -323,10 +334,12 @@ p {
         border-color: rgb(190, 190, 190);
         border-radius: 5px;
         background-color: rgb(255, 255, 255);
-    &:focus {
-        background-color: $complementary-background;
-       
-    }
+
+        &:focus {
+            background-color: $complementary-background;
+
+
+        }
     }
 
     .submit {
@@ -338,9 +351,14 @@ p {
         font-weight: $bold;
         font-size: $font-button;
         margin: 40px auto 0 auto;
+
         &:hover {
-            transform: scale(0.8);
             background-color: $dark-background;
+
+        }
+
+        &:active {
+            transform: scale(0.6);
         }
     }
 
@@ -350,7 +368,7 @@ p {
         margin-top: 19px;
         line-height: 1.2;
         text-align: center;
-        
+
     }
 }
 
@@ -359,6 +377,17 @@ p {
     background-color: $dark-background;
     color: $light-font;
     position: relative;
+    margin-top: 250px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -115px;
+        width: 0;
+        height: 0;
+        border-bottom: 115px solid $dark-background;
+        border-left: 100vw solid transparent;
+    }
 
     .envanto-elite-badge {
         margin-top: -201px;
@@ -405,15 +434,6 @@ p {
     }
 }
 
-.envato-elite:before {
-    content: '';
-    position: absolute;
-    top: -115px;
-    width: 0;
-    height: 0;
-    border-bottom: 115px solid $dark-background;
-    border-left: 100vw solid transparent;
-}
 
 .speakers {
     background-color: $light-background;
@@ -421,10 +441,21 @@ p {
     width: 100%;
     padding-top: 165px;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: -115px;
+        width: 0;
+        height: 0;
+        border-bottom: 115px solid $light-background;
+        border-left: 100vw solid transparent;
+        z-index: 10;
+    }
+
     .container {
         h2 {
             font-weight: $black;
-
+            margin-left: 55px;
             margin-bottom: 20px;
         }
 
@@ -432,6 +463,7 @@ p {
             font-weight: $light-font;
             width: 50%;
             line-height: 1.2;
+            margin-left: 55px;
         }
 
         .speakers-gallery {
@@ -457,16 +489,7 @@ p {
     }
 }
 
-.speakers:before {
-    content: '';
-    position: absolute;
-    top: -115px;
-    width: 0;
-    height: 0;
-    border-bottom: 115px solid $light-background;
-    border-left: 100vw solid transparent;
-    z-index: 10;
-}
+
 
 
 .sponsors {
@@ -537,19 +560,31 @@ p {
     width: 100vw;
     padding-top: 115px;
     padding-bottom: 94px;
+    border-top: 1px solid #ffffff;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: -115px;
+        width: 0;
+        height: 0;
+        border-bottom: 115px solid $light-background;
+        border-left: 100vw solid transparent;
+    }
 
     .container {
         h2 {
             color: $dark-font;
             font-weight: $black;
             margin-bottom: 33px;
+            margin-left: 100px;
         }
 
         p {
             font-weight: $light-bold;
             width: 51%;
             margin-bottom: 103px;
+            margin-left: 100px;
         }
 
         .grid-container {
@@ -558,7 +593,9 @@ p {
             grid-template-rows: 409px 367px;
             grid-template-areas:
                 'b b b b b b b g g g g g'
-                'o o o o o o r r r r r r';
+                'o o o o o o r r r r r r'
+                'l l l l l l l l l l l l'
+                'l l l l l l l l l l l l';
             margin-bottom: 97px;
 
             .grid-item1 {
@@ -581,6 +618,40 @@ p {
                 grid-area: r;
             }
 
+            .grid-items {
+                display: grid;
+                grid-area: l;
+                grid-template-columns: 100px 100px 100px 100px;
+                grid-template-rows: 370px 340px;
+                grid-template-areas:
+                    'f f f f f f s s s s s s'
+                    'f f f f f f y y y e e e';
+
+            }
+
+            .grid-item5 {
+                background-color: #e0652a;
+                grid-area: f;
+            }
+
+            .grid-item6 {
+                background-color: #90d23d;
+                grid-area: s;
+            }
+
+            .grid-item7 {
+                background-color: #3d6ed2;
+                grid-area: y;
+            }
+
+            .grid-item8 {
+                background-color: #ff9d00;
+                grid-area: e;
+            }
+
+
+
+
         }
 
         .past-events-btn {
@@ -591,19 +662,20 @@ p {
             color: $light-font;
             display: block;
             margin: 0 auto;
+
+            &:hover {
+                background-color: $complementary-background;
+            }
+
+            &:active {
+                transform: scale(0.8);
+            }
+
         }
     }
 }
 
-.past-events::before {
-    content: '';
-    position: absolute;
-    top: -115px;
-    width: 0;
-    height: 0;
-    border-bottom: 115px solid $light-background;
-    border-left: 100vw solid transparent;
-}
+
 
 
 // contact form
@@ -783,21 +855,26 @@ p {
 footer {
 
     background-color: #90d23d;
-    padding: 43px 330px 14px 400px;
+    padding: 43px 0 14px 0;
 
     .container {
         .social-wrapper {
+            text-align: center;
 
             .social-buttons {
                 padding: 17px 27px 14px 39px;
                 display: flex;
-
+                justify-content: center;
+                margin-bottom: 32px;
             }
 
             .social-content {
                 font-weight: $light-bold;
                 font-size: 18px;
                 color: $light-font;
+                margin-bottom: 35px;
+                line-height: 1.2;
+
             }
         }
     }
@@ -843,6 +920,16 @@ footer {
     margin-right: 11px;
 }
 
+.bg-facebook_white:hover {
+    width: 47px;
+    height: 47px;
+    background: url('img/sprites/css_sprites.png') -77px -78px;
+    display: block;
+}
+
+.bg-facebook_white:active {
+    transform: scale(0.6);
+}
 
 .bg-google_plus_white {
     width: 47px;
@@ -852,6 +939,16 @@ footer {
     margin-right: 15.3px;
 }
 
+.bg-google_plus_white:hover {
+    width: 47px;
+    height: 48px;
+    background: url('img/sprites/css_sprites.png') -77px -10px;
+    display: block;
+}
+
+.bg-google_plus_white:active {
+    transform: scale(0.6);
+}
 
 .bg-google_plus {
     width: 47px;
@@ -879,9 +976,9 @@ footer {
 
 .bg-icon {
     width: 33px;
-  height: 33px;
-  background: url("img/sprites/css_sprites.png") -116px -213px;
-  display: block;
+    height: 33px;
+    background: url("img/sprites/css_sprites.png") -116px -213px;
+    display: block;
 }
 
 
@@ -910,6 +1007,17 @@ footer {
     margin-right: 14.6px;
 }
 
+.bg-linkedin_white:hover {
+
+    width: 47px;
+    height: 48px;
+    background: url('img/sprites/css_sprites.png') -144px -10px;
+    display: block;
+}
+
+.bg-linkedin_white:active {
+    transform: scale(0.6);
+}
 
 .bg-More_icon_green {
     width: 33px;
@@ -932,6 +1040,16 @@ footer {
     display: block;
 }
 
+.bg-tumblr_white:hover {
+    width: 47px;
+    height: 47px;
+    background: url('img/sprites/css_sprites.png') -211px -10px;
+    display: block;
+}
+
+.bg-tumblr_white:active {
+    transform: scale(0.6);
+}
 
 .bg-twitter {
     width: 47px;
@@ -957,6 +1075,16 @@ footer {
     margin-right: 13px;
 }
 
+.bg-twitter_white:hover {
+    width: 47px;
+    height: 47px;
+    background: url('img/sprites/css_sprites.png') -10px -146px;
+    display: block;
+}
+
+.bg-twitter_white:active {
+    transform: scale(0.6);
+}
 
 // якоря
 

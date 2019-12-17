@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Meet up</title>
-   
-    
+
+
 </head>
 
 <body>
     <header class="header">
         <img src="img/header.png" class="bg-header" alt="background header image"></div>
-        
-            <div class="top-header">
-                <div class="logo"><a href="index.html"><img src="img/Envato BD Logo.png" alt="logo"></a></div>
-                <nav>
-                    <li><a href="#event-details">Event Details</a></li>
-                    <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#sponsor">Sponsors</a></li>
-                    <li><a href="#past-events">Past Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </nav>
-            </div>
+
+        <div class="top-header">
+            <div class="logo"><a href="index.html"><img src="img/Envato BD Logo.png" alt="logo"></a></div>
+            <nav>
+                <li><a href="#event-details">Event Details</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#sponsor">Sponsors</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+        </div>
         </div>
         <div class="container">
             <div id="timer">
@@ -63,7 +63,8 @@
                         to our event. Just kidding, but we don’t mind having more cookies! ;) Head over and fill up the
                         sign
                         up
-                        form here so that we can keep track of our guests. Don’t forget to register on our <span>nvite</span>
+                        form here so that we can keep track of our guests. Don’t forget to register on our
+                        <span>nvite</span>
                         here
                         too!
                     </p>
@@ -95,9 +96,9 @@
             <div class="register-box">
                 <h4>Sign up for our event</h4>
                 <form action="">
-                    <input type="text"  required placeholder="Your name">
-                    <input type="email"  placeholder="Enter your email">
-                    <input type="tel" class="phone"  placeholder="Phone number">
+                    <input type="text" required placeholder="Your name">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="tel" class="phone" placeholder="Phone number">
                     <input type="text" placeholder="Envato Username">
                     <input type="submit" class="submit" value=" Let me in!">
                 </form>
@@ -115,27 +116,31 @@
                         </td>
                         <td></td>
                     </tr>
+                   
                     <tr>
                         <td>10am - 12pm</td>
                         <td>Introduction and presentations about Envato </td>
-                        <td><img class="bg-icon"></td>
+                        <td class="plus-btn"><img class="bg-icon"></td>
                     </tr>
+                    
                     <tr>
                         <td>12pm - 02 pm</td>
                         <td>Sessions by honorable guests and Speakers</td>
-                        <td><img src="img/icon+.png" alt=""></td>
+                        <td><img class="bg-icon plus-btn"></td>
                     </tr>
+                    
                     <tr>
                         <td>02pm - 03pm</td>
                         <td>Break and Mingle time with the authors</td>
-                        <td><img src="img/icon+.png" alt=""></td>
+                        <td><img class="bg-icon plus-btn"></td>
                     </tr>
+                   
                     <tr>
                         <td>03pm - 05pm</td>
                         <td>Portfolio Review, Rewards and Ending Presentation</td>
-                        <td><img src="img/icon+.png" alt=""></td>
+                        <td><img class="bg-icon plus-btn"></td>
                     </tr>
-
+                    
                 </table>
                 <p class="table-text">Please keep in mind that the timings may differ according to the flow of the
                     event. The even is
@@ -225,6 +230,13 @@
                     <div class="grid-item2"></div>
                     <div class="grid-item3"></div>
                     <div class="grid-item4"></div>
+                    <div class="grid-items">
+                        <div class="grid-item5"></div>
+                        <div class="grid-item6"></div>
+                        <div class="grid-item7"></div>
+                        <div class="grid-item8"></div>
+                    </div>
+                    
                 </div>
                 <button class="past-events-btn">View More</button>
             </div>
@@ -235,22 +247,23 @@
                     <div class="address">
                         <img src="/img/icon-address.png" alt="">
                         <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
-                      <div class="map-wrapper" id="map">
-                        <button class="btn-map">View Map</button>
-                        <div class="iframe-container" >
-                            <div id="view-map">
-                            <iframe src="https://yandex.ru/map-widget/v1/-/CGdenP7~" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
-                            <button class="remove-button">x</button>
+                        <div class="map-wrapper" id="map">
+                            <button class="btn-map">View Map</button>
+                            <div class="iframe-container">
+                                <div id="view-map">
+                                    <iframe src="https://yandex.ru/map-widget/v1/-/CGdenP7~" width="560" height="400"
+                                        frameborder="1" allowfullscreen="true"></iframe>
+                                    <button class="remove-button">x</button>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
                     </div>
                     <form class="contact-form" action="" method="post" id="email">
                         <input type="email" required>
                         <textarea> </textarea>
                         <button class="contact-form-btn" type="button">Send Message</button>
                     </form>
-                    
+
                 </div>
         </section>
     </main>
@@ -258,11 +271,11 @@
         <div class="container">
             <div class="social-wrapper">
                 <div class="social-buttons">
-                    <div class="bg-facebook_white"></div>
-                    <div class="bg-twitter_white"></div>
-                    <div class="bg-linkedin_white"></div>
-                    <div class="bg-google_plus_white"></div>
-                    <div class="bg-tumblr_white"></div>
+                    <a class="bg-facebook_white" target="_blank" href="https://www.facebook.com/"></a>
+                    <a class="bg-twitter_white" target="_blank" href="https://www.twitter.com/"></a>
+                    <a class="bg-linkedin_white" target="_blank" href="https://www.linkedin.com/"></a>
+                    <a class="bg-google_plus_white" target="_blank" href="https://myaccount.google.com/"></a>
+                    <a class="bg-tumblr_white" target="_blank" href="https://www.tumblr.com/"></a>
                 </div>
                 <div class="social-content">
                     <p>Hope we see you at the event!</p>
@@ -271,8 +284,8 @@
             </div>
         </div>
     </footer>
-    <script  src="timer.js"></script>
-    <script  src="js.js"></script>
+    <script src="timer.js"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
