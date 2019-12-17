@@ -18,3 +18,22 @@ rembtnElem.onclick = function() {
 };
 
 
+
+// Past Event show/hide button
+
+let pasteventBtn = document.querySelector('.past-events-btn');
+let griditemsOpen = document.querySelector('.grid-items');
+
+pasteventBtn.onclick = function() {
+  if(griditemsOpen.style.display === "grid") {
+     griditemsOpen.style.display="none";
+     pasteventBtn.innerHTML="View More";
+  } else {
+    griditemsOpen.style.display="grid";
+    pasteventBtn.innerHTML="Hide Images";
+  }
+
+}
+
+pasteventBtn();
+

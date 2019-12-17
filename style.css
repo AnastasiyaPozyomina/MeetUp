@@ -580,8 +580,7 @@ p {
 }
 
 .past-events .container .grid-container .grid-items {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;

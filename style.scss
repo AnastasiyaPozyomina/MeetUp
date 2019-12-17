@@ -286,7 +286,7 @@ p {
 
         }
 
-      
+
 
         .table-text {
             line-height: 1.2;
@@ -619,15 +619,18 @@ p {
             }
 
             .grid-items {
-                display: grid;
+                display: none;
                 grid-area: l;
                 grid-template-columns: 100px 100px 100px 100px;
                 grid-template-rows: 370px 340px;
                 grid-template-areas:
                     'f f f f f f s s s s s s'
                     'f f f f f f y y y e e e';
+               
 
             }
+
+            
 
             .grid-item5 {
                 background-color: #e0652a;
